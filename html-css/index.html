@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML/CSS Tutorial</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <style>
+        /* Page specific overrides */
+        .week-card {
+            text-align: center;
+            padding: var(--spacing-lg);
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: var(--radius-md);
+            transition: var(--transition-bounce);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 200px;
+        }
+
+        .week-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: var(--glass-shadow);
+        }
+
+        .week-title {
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-md);
+            color: var(--text-main);
+        }
+
+        .week-icon {
+            font-size: 3rem;
+            margin-bottom: var(--spacing-md);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-hero">
+            <h1>🎨 HTML & CSS Mastery</h1>
+            <p>Master the art of building beautiful, responsive websites.</p>
+        </div>
+
+        <div class="grid-container">
+            <a href="week1.html" class="week-card">
+                <div class="week-icon">🏗️</div>
+                <h2 class="week-title">Week 1: Foundations</h2>
+                <p>Structure & Basic Styling</p>
+            </a>
+            <a href="week2.html" class="week-card">
+                <div class="week-icon">📐</div>
+                <h2 class="week-title">Week 2: Layouts</h2>
+                <p>Box Model & Flexbox</p>
+            </a>
+            <a href="week3.html" class="week-card">
+                <div class="week-icon">📱</div>
+                <h2 class="week-title">Week 3: Responsive</h2>
+                <p>Media Queries & Grid</p>
+            </a>
+            <a href="week4.html" class="week-card">
+                <div class="week-icon">✨</div>
+                <h2 class="week-title">Week 4: Advanced</h2>
+                <p>Animations & Transitions</p>
+            </a>
+            <a href="ani.html" class="week-card">
+                <div class="week-icon">🎭</div>
+                <h2 class="week-title">Complex CSS</h2>
+                <p>Advanced Animations</p>
+            </a>
+        </div>
+    </div>
+    <script src="../JS/add-navigation.js"></script>
+</body>
+
+</html>
